@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+.Side-bar {
+  width: 300px;
+  color: #ffffff;
+  float: left;
+  &__user-name {
+    padding: 0 20px;
+    background-color: #253141;
+    height: 100px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    .top-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100vw;
+      &__name {
+        p {
+          font-size: 16px;
+        }
+      }
+      &__icons {
+        width: 60px;
+        text-align: right;
+        .icon-btn {
+          color: #ffffff;
+          margin-left: 5px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__group-list {
+    height: calc(100vh - 100px);
+    padding: 20px 20px 0 20px;
+    background-color: #2f3e51;
+    .techcamp-logo {
+      font-size: 15px;
+    }
+    .latest-message {
+      font-size: 11px;
+      padding: 5px 0 40px 0;
+    }
+  }
+}
+
+.Chat-main {
+  width: calc(100vw - 300px);
+  float: left;
+  .group-info {
+    background-color: #ffffff;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    &__name-box {
+      .group-name {
+        margin-top: 35px;
+        font-size: 20px;
+        color: #333333;
+      }
+      .member-name {
+        margin-top: 15px;
+        color: #999999;
+      }
+    }
+    &__edit-btn {
+      text-decoration: none;
+      margin-top: 28px;
+      height: 40px;
+      width: 72px;
+      font-size: 16px;
+      color: #38aef0;
+      text-align: center;
+      line-height: 40px;
+      border: solid #38aef0;
+    }
+  }
+  .message-list {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+    border-top: solid #eeeeee;
+    padding: 35px 0 0 40px;
+    &__info {
+      display: flex;
+      margin-bottom: 12px;
+      .member-name {
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .timestamp {
+        color: #999999;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+    &__content {
+      margin-bottom: 46px;
+      color: #434A54;
+      font-size: 14px;
+    }
+  }
+  .message-form {
+    background-color: #d2d2d2;
+    height: 90px;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    .input-box {
+      height: 50px;
+      width: 100%;
+      line-height: 50px;
+      display: flex;
+      position: relative;
+      .input-box__text {
+        width: 100%;
+        padding: 0 10px;
+        border: none;
+      }
+      .input-box__image {
+        input{
+          display: none;
+        }
+        position: absolute;
+        right: 10px;
+      }
+    }
+    .send-btn {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 30px;
+      margin-left: 15px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #38aef0;
+      border: none;
+    }
+  }
+}

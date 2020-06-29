@@ -7,11 +7,11 @@
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-}
-.AccountPage__title {
+  &__title {
   width: 50%;
   font-size: 14px;
   font-weight: 200;
+  }
 
   h2 {
     margin-bottom: 10px;
@@ -31,11 +31,13 @@
     color: #fff;
     background-color: #ccc;
   }
+
+  &__form {
+    width: 50%;
+  }
 }
 
-.AccountPage__form {
-  width: 50%;
-}
+
 
 .FormField {
   margin-bottom: 10px;

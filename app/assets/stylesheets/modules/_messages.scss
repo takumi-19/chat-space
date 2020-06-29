@@ -116,12 +116,12 @@
       line-height: 50px;
       display: flex;
       position: relative;
-      .input-box__text {
+      &__text {
         width: 100%;
         padding: 0 10px;
         border: none;
       }
-      .input-box__image {
+      &__image {
         input{
           display: none;
         }

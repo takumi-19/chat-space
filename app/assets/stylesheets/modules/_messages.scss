@@ -36,13 +36,17 @@
     height: calc(100vh - 100px);
     padding: 20px 20px 0 20px;
     background-color: #2f3e51;
-    .Group {
-      &__name {
-        font-size: 15px;
-      }
-      &__message {
-        font-size: 11px;
-        padding: 5px 0 40px 0;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      .Group {
+        &__name {
+          font-size: 15px;
+        }
+        &__message {
+          font-size: 11px;
+          padding: 5px 0 40px 0;
+        }
       }
     }
   }
@@ -65,6 +69,7 @@
       }
       .member-name {
         margin-top: 15px;
+        font-size: 12px;
         color: #999999;
       }
     }
@@ -77,29 +82,29 @@
       color: #38aef0;
       text-align: center;
       line-height: 40px;
-      border: solid #38aef0;
+      border: 1px solid #38aef0;
     }
   }
   .message-list {
     height: calc(100vh - 190px);
     background-color: #fafafa;
-    border-top: solid #eeeeee;
+    border-top: 1px solid #eeeeee;
     padding: 35px 0 0 40px;
-    &__info {
+    .message-info {
       display: flex;
       margin-bottom: 12px;
-      .member-name {
+      &__user-name {
         color: #333333;
         font-size: 16px;
         font-weight: bold;
       }
-      .timestamp {
+      &__date {
         color: #999999;
         font-size: 12px;
         margin-left: 10px;
       }
     }
-    &__content {
+    .message {
       margin-bottom: 46px;
       color: #434A54;
       font-size: 14px;
@@ -112,34 +117,38 @@
     padding: 0 40px;
     display: flex;
     align-items: center;
-    .input-box {
-      height: 50px;
+    &__form-with {
       width: 100%;
-      line-height: 50px;
       display: flex;
-      position: relative;
-      &__text {
+      .input-box {
+        height: 50px;
         width: 100%;
-        padding: 0 10px;
+        line-height: 50px;
+        display: flex;
+        position: relative;
+        &__text {
+          width: 100%;
+          padding: 0 10px;
+          border: none;
+        }
+        &__image {
+          input{
+            display: none;
+          }
+          position: absolute;
+          right: 10px;
+        }
+      }
+      .send-btn {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #38aef0;
         border: none;
       }
-      &__image {
-        input{
-          display: none;
-        }
-        position: absolute;
-        right: 10px;
-      }
-    }
-    .send-btn {
-      height: 50px;
-      line-height: 50px;
-      padding: 0 30px;
-      margin-left: 15px;
-      font-size: 16px;
-      color: #fff;
-      background-color: #38aef0;
-      border: none;
     }
   }
 }

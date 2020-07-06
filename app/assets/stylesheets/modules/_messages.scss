@@ -2,18 +2,18 @@
   box-sizing: border-box;
 }
 
-.Side-bar {
+.SideBar {
   width: 300px;
   color: #ffffff;
   float: left;
-  &__user-name {
+  &__userName {
     padding: 0 20px;
     background-color: #253141;
     height: 100px;
     font-weight: bold;
     display: flex;
     align-items: center;
-    .top-items {
+    .TopItems {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -24,7 +24,7 @@
       &__icons {
         width: 60px;
         text-align: right;
-        .icon-btn {
+        .IconBtn {
           color: #ffffff;
           margin-left: 5px;
           text-decoration: none;
@@ -32,7 +32,7 @@
       }
     }
   }
-  &__group-list {
+  &__groupList {
     height: calc(100vh - 100px);
     padding: 20px 20px 0 20px;
     background-color: #2f3e51;
@@ -52,28 +52,28 @@
   }
 }
 
-.Chat-main {
+.ChatMain {
   width: calc(100vw - 300px);
   float: left;
-  .group-info {
+  .GroupInfo {
     background-color: #ffffff;
     height: 100px;
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    &__name-box {
-      .group-name {
+    &__nameBox {
+      .GroupName {
         margin-top: 35px;
         font-size: 20px;
         color: #333333;
       }
-      .member-name {
+      .MemberName {
         margin-top: 15px;
         font-size: 12px;
         color: #999999;
       }
     }
-    &__edit-btn {
+    &__editBtn {
       text-decoration: none;
       margin-top: 28px;
       height: 40px;
@@ -85,15 +85,16 @@
       border: 1px solid #38aef0;
     }
   }
-  .message-list {
+  .MessageList {
     height: calc(100vh - 190px);
     background-color: #fafafa;
     border-top: 1px solid #eeeeee;
     padding: 35px 0 0 40px;
-    .message-info {
+    overflow: scroll;
+    .MessageInfo {
       display: flex;
       margin-bottom: 12px;
-      &__user-name {
+      &__userName {
         color: #333333;
         font-size: 16px;
         font-weight: bold;
@@ -104,23 +105,23 @@
         margin-left: 10px;
       }
     }
-    .message {
+    .Message {
       margin-bottom: 46px;
       color: #434A54;
       font-size: 14px;
     }
   }
-  .message-form {
+  .MessageForm {
     background-color: #d2d2d2;
     height: 90px;
     width: 100%;
     padding: 0 40px;
     display: flex;
     align-items: center;
-    &__form-with {
+    &__formWith {
       width: 100%;
       display: flex;
-      .input-box {
+      .InputBox {
         height: 50px;
         width: 100%;
         line-height: 50px;
@@ -139,7 +140,7 @@
           right: 10px;
         }
       }
-      .send-btn {
+      .SendBtn {
         height: 50px;
         line-height: 50px;
         padding: 0 30px;

@@ -1,21 +1,21 @@
-.Chat-main
-  .group-info
-    .group-info__name-box
-      .group-name
+.ChatMain
+  .GroupInfo
+    .GroupInfo__nameBox
+      .GroupName
         = @group.name
-      .member-name
+      .MemberName
         Member :
         - @group.users.each do |user|
           = user.name
-    = link_to edit_group_path(@group), class: "group-info__edit-btn" do
+    = link_to edit_group_path(@group), class: "GroupInfo__editBtn" do
       Edit
-  .message-list
+  .MessageList
     = render @messages
-  .message-form
-    = form_with model: [@group, @message], html: {class: "message-form__form-with"}, local: true do |form|
-      .input-box
-        = form.text_field :content, placeholder: "type a message", class: "input-box__text"
-        = form.label :image, class: "input-box__image" do
-          = icon('fas', 'image', class: 'image__icon')
+  .MessageForm
+    = form_with model: [@group, @message], html: {class: "MessageForm__formWith"}, local: true do |form|
+      .InputBox
+        = form.text_field :content, placeholder: "type a message", class: "InputBox__text"
+        = form.label :image, class: "InputBox__image" do
+          = icon('fas', 'image', class: 'Image__icon')
           = form.file_field :image, class: 'Hidden'
-      = form.submit "Send", class: "send-btn"
+      = form.submit "Send", class: "SendBtn"
